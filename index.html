@@ -37,10 +37,12 @@
 
                 <p class="cta-subtitle">Enter your email to get the PDF delivered instantly.</p>
 
-                <!-- Standard Formspree Integration with _next Redirect -->
-                <form class="optin-form" action="https://formspree.io/f/meeronaz" method="POST">
-                    <!-- Absolute URL specifically required by Formspree to redirect back to our custom success page -->
+                <!-- FormSubmit Integration -->
+                <form class="optin-form" action="https://formsubmit.co/the1942brand@gmail.com" method="POST">
+                    <!-- Force redirection to the success page -->
                     <input type="hidden" name="_next" value="https://1942ways.github.io/whatsapp-cheat-sheet/success.html">
+                    <!-- Disable FormSubmit's default ReCaptcha to ensure a smooth redirect -->
+                    <input type="hidden" name="_captcha" value="false">
                     
                     <div class="input-group">
                         <input type="email" name="email" id="email" placeholder="email@example.com" required>
