@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 15-Minute WhatsApp Sales Cheat Sheet</title>
+    <meta name="description" content="Download the ultimate blueprint to mastering WhatsApp marketing and monetizing your chat list.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Background Animated Gradients -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <main class="container">
+        
+        <div class="content-wrapper">
+            <!-- Left Side: Copy & Form -->
+            <div class="glass-panel text-content">
+                <div class="badge">FREE CHEAT SHEET</div>
+                <h1 class="headline">The 15-Minute <span class="highlight">WhatsApp Sales</span> Cheat Sheet</h1>
+                
+                <p class="subheadline">
+                    Email marketing has a 20% open rate. WhatsApp boasts over 90%. If you aren't monetizing your chat list, you are leaving money on the table.
+                </p>
+
+                <ul class="benefits">
+                    <li><span class="check">✓</span> Discover how to turn chats into closed deals</li>
+                    <li><span class="check">✓</span> Learn exactly what messages drive high conversions</li>
+                    <li><span class="check">✓</span> 3 pages of dense, zero-fluff strategy you can apply today</li>
+                </ul>
+
+                <p class="cta-subtitle">Enter your email to get the PDF delivered instantly.</p>
+
+                <!-- Formspree Integration -->
+                <form class="optin-form" action="https://formspree.io/f/meeronaz" method="POST">
+                    <!-- This hidden field tells Formspree to redirect to our success page -->
+                    <input type="hidden" name="_next" value="success.html">
+                    
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                    </div>
+                    <button type="submit" class="cta-button">
+                        Send Me the Blueprint 🚀
+                        <div class="btn-glow"></div>
+                    </button>
+                    <p class="privacy-note">No spam. Just high-level business strategy.</p>
+                </form>
+            </div>
+
+            <!-- Right Side: 3D Cover Image -->
+            <div class="image-content">
+                <div class="cover-wrapper">
+                    <img src="images/cover.png" alt="WhatsApp Marketing Blueprint Cover" class="book-cover">
+                    <!-- Subtle shadow underneath the book -->
+                    <div class="cover-shadow"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Micro-animations for the form input
+        const input = document.getElementById('email');
+        const formGroup = document.querySelector('.input-group');
+        
+        input.addEventListener('focus', () => {
+            formGroup.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', () => {
+            if(input.value === '') {
+                formGroup.classList.remove('focused');
+            }
+        });
+    </script>
+</body>
+</html>
