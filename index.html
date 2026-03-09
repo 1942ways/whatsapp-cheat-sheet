@@ -39,10 +39,11 @@
 
                 <!-- FormSubmit Integration -->
                 <form class="optin-form" action="https://formsubmit.co/the1942brand@gmail.com" method="POST">
-                    <!-- Force redirection to the success page -->
+                    <!-- Target the redirect specifically to the success page file -->
                     <input type="hidden" name="_next" value="https://1942ways.github.io/whatsapp-cheat-sheet/success.html">
-                    <!-- Disable FormSubmit's default ReCaptcha to ensure a smooth redirect -->
                     <input type="hidden" name="_captcha" value="false">
+                    <!-- Add an automatic subject line so the user knows what the email is -->
+                    <input type="hidden" name="_subject" value="New WhatsApp Cheat Sheet Lead! 🚀">
                     
                     <div class="input-group">
                         <input type="email" name="email" id="email" placeholder="email@example.com" required>
